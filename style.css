@@ -4,6 +4,10 @@
   font-family: Century Gothic;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://d13b2ieg84qqce.cloudfront.net/f07e4f95104cdd5544640486d187493d525f8ebd.jpg');
   height: 100vh;
@@ -49,4 +53,32 @@ ul li a:hover{
 .title h1{
   color: #fff;
   font-size: 70px;
+}
+
+.about{
+  background-color: #000;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.title1{
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title1 h1{
+  color: #fff;
+  font-size: 70px;
+}
+
+.text{
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
 }
