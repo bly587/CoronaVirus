@@ -16,7 +16,6 @@ header{
 }
 
 ul{
-  float: right;
   list-style-type: none;
   margin-top: 25px;
 }
@@ -40,7 +39,9 @@ ul li a:hover{
 
 .main{
   max-width: 1200px;
-  margin: auto;
+  margin: 0;
+  position: fixed;
+  right: 20px;
 }
 
 .title{
