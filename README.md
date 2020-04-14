@@ -1,7 +1,8 @@
 # CoronaVirus
 #Contributor: Titan Mitchell
 
-#Created initial layout for index.html page 4/3/20
+#Created initial layout for index.html page
+#Updated webpage and created a sign up page
 
 #Contributor: Michael Kulinich
 
