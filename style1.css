@@ -3,8 +3,18 @@ body{
   padding: 0;
   font-family: sans-serif;
   background: #34495e;
+  background-image: url('./media/keck1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('keck.png');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
 ul{
   list-style-type: none;
@@ -42,7 +52,6 @@ ul li a:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #191919;
   text-align: center;
 }
 
