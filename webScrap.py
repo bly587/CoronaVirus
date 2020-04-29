@@ -9,9 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import requests
 from bs4 import BeautifulSoup
-page = requests.get("https://www.worldometers.info/coronavirus/country/us/")
 
-soup = BeautifulSoup(page.content, 'lxml')
 
 # driver = webdriver.Chrome()
 # driver.set_page_load_timeout(15)
@@ -19,6 +17,9 @@ soup = BeautifulSoup(page.content, 'lxml')
 # driver.get("https://www.worldometers.info/coronavirus/country/us/")
 # time.sleep(5)
 # driver.quit()
+
+page = requests.get("https://www.worldometers.info/coronavirus/country/us/")
+soup = BeautifulSoup(page.content, 'lxml')
 table = soup.find('table')
 table_rows = table.find_all('tr')
 table1 = []
