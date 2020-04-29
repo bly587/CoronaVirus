@@ -1,9 +1,3 @@
-# CoronaVirus
-#Contributor: Titan Mitchell
-
-#Created initial layout for index.html page
-#Updated webpage and created a sign up page
-
 #Contributor: Michael Kulinich
 
 #I made a script using Beautiful soup that can scrap info off of the world meter on coronavirus, #https://www.worldometers.info/coronavirus/country/us/
