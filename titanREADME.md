@@ -6,3 +6,6 @@ Contributor: Titan Mitchell
   •This data will then be passed over to the smtp page where an email can be
   pulled from the database and then used to deliver information regarding
   Covid-19
+-Created and formatted information page that will be sent to users
+-Created poster
+-Wrote and submitted elevator pitch
