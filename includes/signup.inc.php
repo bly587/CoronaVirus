@@ -25,13 +25,10 @@ if (isset($_POST['signup-submit'])) {
   mysqli_close($conn);
 }
 else {
-  //$output = shell_exec("python3 webScrap.py");
-  // $command = 'ls';
-  // exec($command, $out, $status);
-  // $command = escapeshellcmd('python3 /Users/titanmitchell/Documents/CPSC_Courses/CPSC353/CoronaVirus/webScrap.py');
-  // $output = shell_exec($command);
-  exec('/Users/titanmitchell/Documents/CPSC_Courses/CPSC353/CoronaVirus/webScrap.py');
-  //var_dump($output);
-  // echo $output;
+  echo system("/Users/titanmitchell/Documents/CPSC_Courses/CPSC353/CoronaVirus/webScrap.py");
+  $command = escapeshellcmd('/Users/titanmitchell/Documents/CPSC_Courses/CPSC353/CoronaVirus/webScrap.py');
+  $output = shell_exec($command);
+  var_dump($output);
+  echo $output;
   exit();
 }
