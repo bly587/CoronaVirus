@@ -17,14 +17,14 @@ from bs4 import BeautifulSoup
 # driver.get("https://www.worldometers.info/coronavirus/country/us/")
 # time.sleep(5)
 # driver.quit()
-
+# def getInfo():
 page = requests.get("https://www.worldometers.info/coronavirus/country/us/")
 soup = BeautifulSoup(page.content, 'lxml')
 table = soup.find('table')
 table_rows = table.find_all('tr')
 table1 = []
-state = input("Input your state: ").capitalize()
-
+#state = input("Input your state: ").capitalize()
+state = "Hawaii"
 for tr in table_rows:
 	td = tr.find_all('td')
 	row = [i.text.strip() for i in td]
