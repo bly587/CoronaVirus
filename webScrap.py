@@ -1,5 +1,6 @@
 # https://intellipaat.com/community/16524/take-screenshot-of-full-page-with-selenium-python-with-chromedriver  set up classes
 # figure out regex
+#! /Users/titanmitchell/Applications/Python 3.8/IDLE.app
 
 from selenium import webdriver
 import time
@@ -32,4 +33,6 @@ for tr in table_rows:
 for i in range(len(table1)):
     for j in range(len(table1[i])):
         if table1[i][j] == state :
-            print("Total number of cases in your state right now is: {}".format(table1[i][j+1]))
+			my_string = "Total number of cases in your state right now is: {}".format(table1[i][j+1])
+            #print("Total number of cases in your state right now is: {}".format(table1[i][j+1]))
+			return my_string
