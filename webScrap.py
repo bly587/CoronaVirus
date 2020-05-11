@@ -28,7 +28,7 @@ def getData(state):
 	for i in range(len(table1)):
 		for j in range(len(table1[i])):
 			if table1[i][j] == state:
-				my_string = "Hello friends,\n\nI hope that you and your family are staying healthy during these uncertain times.\n    Below are the lates statistics about COVID-19 in {}:\n    The total number of cases right now is: {}\n    The total number of deaths is: {}\n    The number of active cases is: {}\n\nPlease visit cdc.gov to follow their guidlines and to stay up to date about the CoronaVirus.\n\nHave a safe and healthy time,\nCVTF".format(state, table1[i][j+1],table1[i][j+3],table1[i][j+5])
+				my_string = "Hello friends,\n\nI hope that you and your family are staying healthy during these uncertain times.\n    Below are the latest statistics about COVID-19 in {}:\n    The total number of cases right now is: {}\n    The total number of deaths is: {}\n    The number of active cases is: {}\n\nPlease visit cdc.gov to follow their guidlines and to stay up to date about the CoronaVirus.\n\nHave a safe and healthy time,\nCVTF".format(state, table1[i][j+1],table1[i][j+3],table1[i][j+5])
 
 
 				return my_string
