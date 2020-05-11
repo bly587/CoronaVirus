@@ -1,26 +1,30 @@
 
 from selenium import webdriver
 import time
+import webScrap
 
 # Selenium to automate through web
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import requests
 from bs4 import BeautifulSoup
-
-f = open("practiceDataBase.txt", "r")
-count = 0
-for line in f:
-    if count == 0:
-        email = line.strip()
-        count += 1
-    elif count == 1:
-        state = line.strip()
-        count += 1
-    else:
-        text = line.strip()
-
-f.close()
+#
+# f = open("practiceDataBase.txt", "r")
+# count = 0
+# for line in f:
+#     if count == 0:
+#         email = line.strip()
+#         count += 1
+#     elif count == 1:
+#         state = line.strip()
+#         count += 1
+#     else:
+#         text = line.strip()
+#
+# f.close()
+state = input("Input your state: ").capitalize()
+email = input("Enter your email: ")
+email_body_string = webScrap.getData(state)
 
 driver = webdriver.Chrome()
 driver.set_page_load_timeout(15)
@@ -41,7 +45,7 @@ time.sleep(4)
 driver.find_element_by_xpath("//textarea[@name='to']").send_keys(email)
 time.sleep(1)
 driver.find_element_by_xpath("//input[@name='subjectbox']").send_keys("CoronaVirus Update")
-driver.find_element_by_xpath("//div[@class='Am Al editable LW-avf tS-tW']").send_keys("Hello friends, the number of cases in {} is {}".format(state, text))
+driver.find_element_by_xpath("//div[@class='Am Al editable LW-avf tS-tW']").send_keys(email_body_string)
 # Am Al editable LW-avf tS-tW
 driver.find_element_by_xpath("//div[@class='T-I J-J5-Ji aoO v7 T-I-atl L3']").click()
 #T-I J-J5-Ji aoO v7 T-I-atl L3
