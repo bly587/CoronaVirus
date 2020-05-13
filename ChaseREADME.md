@@ -5,7 +5,7 @@ Chase Bradshaw
 - Implemented ip geolocation with ipstack api
 - Assisted with PHP to python script compatibility
 
-https://raw.githubusercontent.com/bly587/CoronaVirus
+https://github.com/bly587/CoronaVirus
 
 
  
