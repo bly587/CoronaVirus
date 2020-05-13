@@ -3,10 +3,13 @@ Instructions for installing components needed to compile and run the project
 
 Beautiful Soup
 pip instal beautifulsoup4
+
 https://www.crummy.com/software/BeautifulSoup/#Download
+
 Selenium
 
 pip instal -U selenium
+
 https://www.selenium.dev/selenium/docs/api/py/index.html
 Instal appropriate web driver
 https://sites.google.com/a/chromium.org/chromedriver/downloads
