@@ -1,6 +1,9 @@
 Michael Kulinich
+
 kulinich@chapman.edu
+
 CPSC 353-02
+
 Final Project submission
 
 #Helped come up with the idea and the strategy of attacking the problem
